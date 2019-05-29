@@ -6,7 +6,7 @@ Use AMPscript in a landing page in order to unsubscribe a contact, or update its
 
 If you pass some parameters in the URL you can interact within a Cloud Page with AMPscript. 
 
-```vbscript
+```java
 %%[
 set @subkey = requestparameter("subkey")
 set @email = requestparameter("email")
@@ -31,7 +31,7 @@ In this snipet we use [APIs functions with AMPscript](https://developer.salesfor
 
 In this example we will update the `DoNotTrack` attribute and change its value from `false` to `true` 
 
-```vbscript
+```java
 %%[
 set @subkey = requestparameter("subkey")
 set @email = requestparameter("Email")
@@ -62,7 +62,7 @@ set @Status = InvokeUpdate(@Subscriber, @createErrDesc, @createErrNo, @createOpt
 
 In this example we are just updating an custom attribute called `source`
 
-```vbscript
+```java
 %%[ 
 set @Subscriber = CreateObject("Subscriber")
 SetObjectProperty(@Subscriber,"SubscriberKey","marketing@thibs.com")
